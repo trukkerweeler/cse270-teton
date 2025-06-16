@@ -15,7 +15,7 @@ from selenium.webdriver.firefox.options import Options
 class TestHomepage():
   def setup_method(self, method):
     options = Options()
-    options.add_argument("--headless=new")
+    options.add_argument("--headless")
     self.driver = webdriver.Firefox(options=options)
     self.vars = {}
   
